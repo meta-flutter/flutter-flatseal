@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_flatseal/models/flatpak_app.dart';
-import 'package:flutter_flatseal/models/permission.dart';
 
 /// Service to interact with Flatpak command-line tools
 class FlatpakService extends ChangeNotifier {
@@ -65,13 +64,15 @@ class FlatpakService extends ChangeNotifier {
 
       final parts = line.split('\t');
       if (parts.length >= 5) {
-        apps.add(FlatpakApp(
-          id: parts[0].trim(),
-          name: parts[1].trim().isEmpty ? parts[0].trim() : parts[1].trim(),
-          version: parts[2].trim(),
-          branch: parts[3].trim(),
-          origin: parts[4].trim(),
-        ));
+        apps.add(
+          FlatpakApp(
+            id: parts[0].trim(),
+            name: parts[1].trim().isEmpty ? parts[0].trim() : parts[1].trim(),
+            version: parts[2].trim(),
+            branch: parts[3].trim(),
+            origin: parts[4].trim(),
+          ),
+        );
       }
     }
 
