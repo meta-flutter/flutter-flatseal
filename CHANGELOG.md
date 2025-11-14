@@ -33,7 +33,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Real-time permission updates
 - Error handling and loading states
 - Linux desktop support with GTK3 integration
-- Android build support (structure only)
 - Comprehensive documentation:
   - README with features and usage
   - BUILDING guide for all platforms
@@ -64,7 +63,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Platform Support
 - **Linux Desktop**: Full support (GTK3)
-- **Android**: Build files present (limited functionality)
 - **macOS**: Experimental
 - **Windows**: Not supported (no Flatpak)
 - **Web**: Not supported (requires system access)
@@ -75,7 +73,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Custom filesystem paths require manual editing
 - No profile import/export
 - No undo functionality
-- Mobile platforms have limited/no Flatpak support
 
 ### Documentation
 - Complete README with installation and usage
@@ -225,10 +222,6 @@ N/A - First release
 ---
 
 ## FAQ
-
-### When will mobile support be added?
-
-Mobile platforms (Android, iOS) have limited or no Flatpak support. While the app can be built for Android, it will have limited functionality. We're exploring options for future mobile support.
 
 ### Why Flutter instead of GTK?
 

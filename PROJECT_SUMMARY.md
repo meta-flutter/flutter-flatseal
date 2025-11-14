@@ -14,8 +14,8 @@ Flutter Flatseal is a complete Flutter application that replicates the functiona
 - **Total Files**: 27 project files
 - **Dart Files**: 9 (lib + test)
 - **Documentation**: 8 markdown files
-- **Configuration**: 4 files (pubspec, analysis, gradle, cmake)
-- **Platform Files**: 6 (Linux + Android support)
+- **Configuration**: 3 files (pubspec, analysis, cmake)
+- **Platform Files**: 4 (Linux desktop support)
 
 ### Lines of Code (Approximate)
 - **Application Code**: ~1,000 lines (Dart)
@@ -45,8 +45,6 @@ flutter-flatseal/
 │   ├── main.cc                  # C++ entry point
 │   ├── my_application.cc/h      # GTK application wrapper
 │   └── flutter_flatseal.desktop # Desktop integration
-├── android/                      # Android support (structure)
-│   └── app/build.gradle         # Android build config
 ├── test/                        # Unit tests
 │   └── widget_test.dart         # Model and widget tests
 ├── Documentation files          # Comprehensive guides
@@ -162,8 +160,7 @@ dev_dependencies:
 
 ### Platform Support
 - **Primary**: Linux Desktop (GTK3)
-- **Secondary**: Android (structure present)
-- **Build System**: CMake (Linux), Gradle (Android)
+- **Build System**: CMake (Linux)
 
 ## Quality Assurance
 
@@ -185,7 +182,6 @@ Jobs:
   - analyze: Code analysis and formatting check
   - test: Run all tests with coverage
   - build-linux: Linux desktop build
-  - build-android: Android APK build
 ```
 
 ## Comparison with Original Flatseal
@@ -198,11 +194,11 @@ Jobs:
 - Desktop application focus
 
 ### Advantages of Flutter Version ✅
-- Cross-platform potential (Linux, Android, etc.)
 - Modern Material Design 3 UI
 - Hot reload for fast development
 - Extensive package ecosystem
 - Well-documented codebase
+- Linux desktop focused
 
 ### Advantages of Original ✅
 - More mature and battle-tested

@@ -155,7 +155,6 @@ flutter-flatseal/
 │   ├── main.cc
 │   ├── my_application.cc/h
 │   └── flutter_flatseal.desktop
-├── android/                   # Android support (future)
 ├── test/                      # Unit tests
 └── pubspec.yaml              # Dependencies
 ```
@@ -271,11 +270,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Comparison with Original Flatseal
 
 This Flutter implementation provides:
-- ✅ Cross-platform potential (Linux desktop primary, mobile possible)
 - ✅ Modern Material Design UI
 - ✅ Fast, native performance via Flutter
 - ✅ Easy to extend and maintain
 - ✅ Matches core Flatseal functionality
+- ✅ Linux desktop focused
 
 Original Flatseal advantages:
 - More mature and battle-tested
@@ -306,7 +305,6 @@ Original Flatseal: Copyright © 2020-2024 Martin Abente Lahaye (GPLv3)
 - [ ] Multiple application selection
 - [ ] Undo/Redo functionality
 - [ ] Search and filter improvements
-- [ ] Mobile support (Android/iOS)
 - [ ] Package as Snap/Flatpak/AppImage
 
 ## Support

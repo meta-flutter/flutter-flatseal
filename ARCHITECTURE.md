@@ -372,11 +372,6 @@ flatpak override --show <app-id>
 - Icon in system themes
 - Keyboard shortcuts
 
-### Android (Future)
-- Limited Flatpak support
-- Alternative permission management
-- Mobile-optimized UI
-
 ### Other Platforms
 - macOS: Experimental, limited use
 - Windows: Not applicable (no Flatpak)
@@ -415,7 +410,6 @@ flatpak override --show <app-id>
 
 ### Platform Dependencies
 - Linux: GTK3, Flatpak
-- Android: Java 17+
 
 ## References
 
