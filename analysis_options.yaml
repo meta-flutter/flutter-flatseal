@@ -1,0 +1,25 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_use_package_imports
+    - avoid_print
+    - avoid_unnecessary_containers
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_final_locals
+    - require_trailing_commas
+    - sort_child_properties_last
+    - use_key_in_widget_constructors
+    - use_super_parameters
+
+analyzer:
+  exclude:
+    - build/**
+    - linux/flutter/**
+    - android/.gradle/**
+  errors:
+    missing_required_param: error
+    missing_return: error

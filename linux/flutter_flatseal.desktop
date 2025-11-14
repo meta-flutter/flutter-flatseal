@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Flutter Flatseal
+Comment=Manage Flatpak permissions
+Exec=flutter_flatseal
+Icon=flutter_flatseal
+Terminal=false
+Type=Application
+Categories=System;Settings;
+Keywords=flatpak;permissions;sandbox;security;
