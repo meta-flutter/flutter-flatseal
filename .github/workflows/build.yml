@@ -66,11 +66,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev
       
+      - name: Enable Linux desktop
+        run: flutter config --enable-linux-desktop
+      
       - name: Install dependencies
         run: flutter pub get
       
-      - name: Enable Linux desktop
-        run: flutter config --enable-linux-desktop
+      - name: Precache Linux artifacts
+        run: flutter precache --linux
       
       - name: Build Linux release
         run: flutter build linux --release
