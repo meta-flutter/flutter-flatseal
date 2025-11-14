@@ -6,8 +6,19 @@ import 'package:flutter_flatseal/models/permission.dart';
 void main() {
   group('FlatsealApp', () {
     testWidgets('App launches successfully', (WidgetTester tester) async {
-      await tester.pumpWidget(const FlatsealApp());
-      expect(find.text('Flutter Flatseal'), findsOneWidget);
+      await tester.runAsync(() async {
+        await tester.pumpWidget(const FlatsealApp());
+        expect(find.text('Flutter Flatseal'), findsOneWidget);
+        
+        // Pump a frame to trigger the post-frame callback
+        await tester.pump();
+        
+        // Allow some time for async operations to complete
+        await Future.delayed(const Duration(milliseconds: 100));
+        
+        // Pump again to process any state changes
+        await tester.pump();
+      });
     });
   });
 
