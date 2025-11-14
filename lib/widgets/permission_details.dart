@@ -114,8 +114,9 @@ class PermissionDetails extends StatelessWidget {
                   title: 'Features',
                   icon: Icons.settings,
                   permissions: FlatpakPermissions.getDefaultPermissions()
-                      .where((p) =>
-                          p.category == 'features' && p.key != 'network')
+                      .where(
+                        (p) => p.category == 'features' && p.key != 'network',
+                      )
                       .toList(),
                   app: app,
                 ),
@@ -124,8 +125,9 @@ class PermissionDetails extends StatelessWidget {
                   title: 'Network',
                   icon: Icons.wifi,
                   permissions: FlatpakPermissions.getDefaultPermissions()
-                      .where((p) =>
-                          p.category == 'features' && p.key == 'network')
+                      .where(
+                        (p) => p.category == 'features' && p.key == 'network',
+                      )
                       .toList(),
                   app: app,
                 ),
