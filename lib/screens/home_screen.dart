@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../services/flatpak_service.dart';
-import '../widgets/app_list.dart';
-import '../widgets/permission_details.dart';
+import 'package:flutter_flatseal/services/flatpak_service.dart';
+import 'package:flutter_flatseal/widgets/app_list.dart';
+import 'package:flutter_flatseal/widgets/permission_details.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

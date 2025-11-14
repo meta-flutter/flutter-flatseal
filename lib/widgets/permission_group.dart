@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/flatpak_app.dart';
-import '../models/permission.dart';
-import '../services/flatpak_service.dart';
+import 'package:flutter_flatseal/models/flatpak_app.dart';
+import 'package:flutter_flatseal/models/permission.dart';
+import 'package:flutter_flatseal/services/flatpak_service.dart';
 
 class PermissionGroup extends StatelessWidget {
   final String title;
