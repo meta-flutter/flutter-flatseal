@@ -138,7 +138,8 @@ class FlatpakService extends ChangeNotifier {
     bool enable,
   ) async {
     try {
-      final action = enable ? '--$category=$permission' : '--no$category=$permission';
+      final action =
+          enable ? '--$category=$permission' : '--no$category=$permission';
       final result = await Process.run(
         'flatpak',
         ['override', appId, action],

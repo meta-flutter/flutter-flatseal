@@ -31,7 +31,8 @@ class _AppListState extends State<AppList> {
               hintText: 'Search applications...',
               prefixIcon: Icon(Icons.search),
               border: OutlineInputBorder(),
-              contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             ),
             onChanged: (value) {
               setState(() {
