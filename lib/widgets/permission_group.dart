@@ -83,7 +83,8 @@ class PermissionItem extends StatelessWidget {
             if (!success) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Failed to update permission: ${service.error}'),
+                  content:
+                      Text('Failed to update permission: ${service.error}'),
                   backgroundColor: Colors.red,
                 ),
               );
