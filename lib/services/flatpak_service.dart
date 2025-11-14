@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import '../models/flatpak_app.dart';
-import '../models/permission.dart';
+import 'package:flutter_flatseal/models/flatpak_app.dart';
+import 'package:flutter_flatseal/models/permission.dart';
 
 /// Service to interact with Flatpak command-line tools
 class FlatpakService extends ChangeNotifier {

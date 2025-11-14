@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'screens/home_screen.dart';
-import 'services/flatpak_service.dart';
+import 'package:flutter_flatseal/screens/home_screen.dart';
+import 'package:flutter_flatseal/services/flatpak_service.dart';
 
 void main() {
   runApp(const FlatsealApp());
