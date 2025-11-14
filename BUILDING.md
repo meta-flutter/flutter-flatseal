@@ -7,9 +7,8 @@ Detailed instructions for building Flutter Flatseal on various platforms.
 1. [Prerequisites](#prerequisites)
 2. [Setting Up Development Environment](#setting-up-development-environment)
 3. [Building for Linux Desktop](#building-for-linux-desktop)
-4. [Building for Android](#building-for-android)
-5. [Building for Other Platforms](#building-for-other-platforms)
-6. [Troubleshooting](#troubleshooting)
+4. [Building for Other Platforms](#building-for-other-platforms)
+5. [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
 
@@ -38,15 +37,7 @@ sudo dnf install clang cmake ninja-build gtk3-devel flatpak
 sudo pacman -S clang cmake ninja gtk3 flatpak
 ```
 
-#### Android (Optional)
 
-```bash
-# Install Android Studio
-# Download from: https://developer.android.com/studio
-
-# Accept Android licenses
-flutter doctor --android-licenses
-```
 
 ## Setting Up Development Environment
 
@@ -72,9 +63,6 @@ flutter doctor
 ```bash
 # Enable Linux desktop
 flutter config --enable-linux-desktop
-
-# Enable Android (if needed)
-flutter config --enable-android
 
 # Verify enabled platforms
 flutter devices
@@ -147,47 +135,6 @@ This installs:
 - Binary: `/usr/bin/flutter_flatseal`
 - Desktop file: `/usr/share/applications/flutter_flatseal.desktop`
 - Icon: `/usr/share/icons/hicolor/128x128/apps/flutter_flatseal.png`
-
-## Building for Android
-
-While Flutter Flatseal is primarily a desktop application, the codebase supports Android builds (Flatpak functionality will be limited).
-
-### Prerequisites
-
-```bash
-# Accept licenses
-flutter doctor --android-licenses
-
-# Install Android SDK components
-flutter doctor
-```
-
-### Debug APK
-
-```bash
-flutter build apk --debug
-```
-
-Output: `build/app/outputs/flutter-apk/app-debug.apk`
-
-### Release APK
-
-```bash
-# Configure signing (first time)
-# Edit android/app/build.gradle and add signing config
-
-flutter build apk --release
-```
-
-Output: `build/app/outputs/flutter-apk/app-release.apk`
-
-### App Bundle (for Play Store)
-
-```bash
-flutter build appbundle --release
-```
-
-Output: `build/app/outputs/bundle/release/app-release.aab`
 
 ## Building for Other Platforms
 
@@ -304,10 +251,6 @@ jobs:
 ```bash
 # Run comprehensive check
 flutter doctor -v
-
-# Fix common issues
-flutter doctor --android-licenses  # Accept Android licenses
-flutter config --android-sdk <path>  # Set Android SDK path
 ```
 
 ### Build Failures
@@ -401,7 +344,6 @@ flutter build linux --release -j 8
 
 Release builds are typically:
 - Linux: ~15-25 MB (uncompressed bundle)
-- Android: ~20-30 MB (APK)
 
 ## Next Steps
 
